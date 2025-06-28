@@ -1,0 +1,235 @@
+/* === Font Import === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* === Light Theme Base === */
+:root {
+  --ifm-font-family-base: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+  --ifm-color-primary: #000000;
+  --ifm-font-color-base: #333;
+  --ifm-background-color: #ffffff;
+  --ifm-link-color: #1546e7;
+  --ifm-heading-color: #000000;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-link-color: #1546e7;
+  --ifm-code-background: #f5f5f5;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.7;
+}
+
+/* === Dark Theme Base === */
+html[data-theme='dark'] {
+  --ifm-font-color-base: #eaeaea;
+  --ifm-background-color: #121212;
+  --ifm-heading-color: #ffffff;
+  --ifm-navbar-background-color: #1e1e1e;
+  --ifm-navbar-link-color: #82aaff;
+  --ifm-code-background: #1e1e1e;
+  --ifm-link-color: #82aaff;
+}
+
+/* === Body === */
+body {
+  font-family: var(--ifm-font-family-base);
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  margin: 0;
+}
+
+/* === Headings === */
+h1, h2, h3, h4, h5 {
+  color: var(--ifm-heading-color);
+  font-weight: 700;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
+
+/* === Navbar === */
+.navbar {
+  background-color: var(--ifm-navbar-background-color) !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar__link {
+  color: var(--ifm-navbar-link-color) !important;
+}
+
+/* === Sidebar === */
+.theme-doc-sidebar {
+  background-color: #fafafa;
+}
+html[data-theme='dark'] .theme-doc-sidebar {
+  background-color: #1a1a1a;
+}
+.theme-doc-sidebar .menu__list {
+  padding-top: 1rem;
+}
+
+/* === Sidebar Links - Light Mode === */
+.theme-doc-sidebar .menu__link {
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  color: #333333;
+  transition: all 0.2s ease;
+}
+.theme-doc-sidebar .menu__link:hover {
+  background-color: rgba(79, 85, 105, 0.1);
+  color: var(--ifm-link-color);
+}
+.theme-doc-sidebar .menu__link--active,
+.theme-doc-sidebar .menu__link--active:hover,
+.theme-doc-sidebar .menu__link[aria-current='page'],
+.theme-doc-sidebar .menu__link[aria-current='page']:hover {
+  color: #ffffff !important;
+  background-color: var(--ifm-link-color) !important;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+/* === Sidebar Links - Dark Mode === */
+html[data-theme='dark'] .theme-doc-sidebar .menu__link {
+  color: #cccccc !important;
+}
+/* Target table of contents active states in dark mode */
+html[data-theme='dark'] .table-of-contents__link--active,
+html[data-theme='dark'] .table-of-contents__link.table-of-contents__link--active,
+html[data-theme='dark'] .toc-highlight.table-of-contents__link--active {
+  color: #ffffff !important;
+  background-color: #43475073 !important;
+  font-weight: 700 !important;
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+html[data-theme='light'] .toc-highlight.table-of-contents__link--active {
+  color: #363434d7 !important;
+  background-color: #b5b8be34 !important;
+  font-weight: 700 !important;
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+html[data-theme='dark'] .theme-doc-sidebar .menu__link:hover {
+  background-color: rgba(102, 106, 114, 0.15) !important;
+  color: #c5cad6 !important;
+}
+/* Target both toc-highlight and active states */
+html[data-theme='dark'] .toc-highlight.table-of-contents__link--active:hover {
+ color: #ffffffd7 !important;
+  background-color: #b5b8be34 !important;
+}
+
+/* Ensure regular toc links have proper color */
+html[data-theme='dark'] .table-of-contents__link.toc-highlight {
+  color: var(--ifm-color-content-secondary);
+}
+
+html[data-theme='dark'] .table-of-contents__link.toc-highlight:hover {
+  color: var(--ifm-link-hover-color);
+}
+/* Target all possible active states in dark mode */
+html[data-theme='dark'] .theme-doc-sidebar .menu__link--active,
+html[data-theme='dark'] .theme-doc-sidebar .menu__link--active:hover,
+html[data-theme='dark'] .theme-doc-sidebar .menu__link[aria-current='page'],
+html[data-theme='dark'] .theme-doc-sidebar .menu__link[aria-current='page']:hover,
+html[data-theme='dark'] .theme-doc-sidebar .menu__list-item--collapsed .menu__link--sublist,
+html[data-theme='dark'] .theme-doc-sidebar .menu__list-item--collapsed .menu__link--sublist:hover,
+html[data-theme='dark'] .theme-doc-sidebar .menu__list-item .menu__link--active,
+html[data-theme='dark'] .theme-doc-sidebar .menu__list-item .menu__link[aria-current='page'] {
+  color: #ffffff !important;
+  background-color: var(--ifm-link-color) !important;
+  font-weight: 700 !important;
+  border-radius: 6px;
+}
+
+/* === Nested Menu Links === */
+html[data-theme='dark'] .theme-doc-sidebar .menu__list .menu__link {
+  color: #cccccc !important;
+}
+
+html[data-theme='dark'] .theme-doc-sidebar .menu__list .menu__link:hover {
+  background-color: rgba(130, 170, 255, 0.15) !important;
+  color: #82aaff !important;
+}
+
+html[data-theme='dark'] .theme-doc-sidebar .menu__list .menu__link--active,
+html[data-theme='dark'] .theme-doc-sidebar .menu__list .menu__link[aria-current='page'] {
+  color: #ffffff !important;
+  background-color: var(--ifm-link-color) !important;
+  font-weight: 700 !important;
+}
+
+/* === Additional specificity for stubborn elements === */
+html[data-theme='dark'] .theme-doc-sidebar-container .menu__link--active,
+html[data-theme='dark'] .theme-doc-sidebar-container .menu__link[aria-current='page'],
+html[data-theme='dark'] .theme-doc-sidebar-container .menu__link--sublist-caret:after {
+  color: #ffffff !important;
+}
+
+
+/* === Force override any conflicting styles === */
+html[data-theme='dark'] [class*="theme-doc-sidebar"] [class*="menu__link"][class*="active"],
+html[data-theme='dark'] [class*="theme-doc-sidebar"] [class*="menu__link"][aria-current="page"] {
+  color: #ffffff !important;
+  background-color: rgba(68, 75, 102, 0.51) !important;
+}
+
+/* === Breadcrumb Fix for Dark Mode === */
+.breadcrumbs__item a,
+.breadcrumbs__item span {
+  color: var(--ifm-font-color-base);
+}
+html[data-theme='dark'] .breadcrumbs__item a,
+html[data-theme='dark'] .breadcrumbs__item span {
+  color: #cccccc !important;
+}
+.breadcrumbs__item--active span {
+  font-weight: bold; 
+  color: #cccccc;
+}
+
+/* === Table of Contents === */
+.theme-doc-sidebar .table-of-contents__title {
+  font-weight: 600;
+}
+
+/* === Code Blocks === */
+code {
+  background-color: var(--ifm-code-background);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: Consolas, 'Courier New', monospace;
+}
+pre {
+  background-color: var(--ifm-code-background);
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px #e0e0e0;
+  font-size: 0.9rem;
+}
+html[data-theme='dark'] pre {
+  box-shadow: inset 0 0 0 1px #444444;
+}
+
+/* === Admonitions (Notes) === */
+.admonition {
+  border-left: 4px solid var(--ifm-color-primary);
+  background-color: #f0fcfc;
+  padding: 0.8em;
+}
+html[data-theme='dark'] .admonition {
+  background-color: #1a1a1a;
+  border-left-color: var(--ifm-link-color);
+}
+
+/* === Logo Gradient Text === */
+.navbar__title {
+  background: linear-gradient(135deg, #00c6ff, #7928ca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 1.5rem;
+}

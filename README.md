@@ -97,8 +97,10 @@ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub Pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+
 📖 Documentation Structure
-docs/
+textdocs/
 ├── 🏠 Welcome/               # Introduction and getting started
 ├── ✨ Overview/              # Platform overview and key concepts
 ├── 🚀 Install/               # Installation and setup guides
@@ -111,8 +113,6 @@ Navigation Overview
 🚀 Install - Complete installation and configuration guides
 📘 Usage Guide - Practical tutorials for providers and consumers
 🧠 Terminology - Essential terms and definitions for the ecosystem
-
-
 
 ## 🤝 Contributing to Documentation
 

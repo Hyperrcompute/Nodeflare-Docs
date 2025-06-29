@@ -98,21 +98,24 @@ GIT_USER=<Your GitHub username> yarn deploy
 
 If you are using GitHub Pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 
+## 📖 Documentation Structure
 
-📖 Documentation Structure
-textdocs/
+```text
+docs/
 ├── 🏠 Welcome/               # Introduction and getting started
 ├── ✨ Overview/              # Platform overview and key concepts
 ├── 🚀 Install/               # Installation and setup guides
 ├── 📘 Usage Guide/           # Step-by-step usage instructions
 └── 🧠 Terminology/           # Glossary and technical terms
-Navigation Overview
+```
 
-🏠 Welcome - Your starting point with HyperCompute introduction
-✨ Overview - Core concepts of the decentralized GPU marketplace
-🚀 Install - Complete installation and configuration guides
-📘 Usage Guide - Practical tutorials for providers and consumers
-🧠 Terminology - Essential terms and definitions for the ecosystem
+### Navigation Overview
+
+- **🏠 Welcome** - Your starting point with HyperCompute introduction
+- **✨ Overview** - Core concepts of the decentralized GPU marketplace
+- **🚀 Install** - Complete installation and configuration guides
+- **📘 Usage Guide** - Practical tutorials for providers and consumers
+- **🧠 Terminology** - Essential terms and definitions for the ecosystem
 
 ## 🤝 Contributing to Documentation
 

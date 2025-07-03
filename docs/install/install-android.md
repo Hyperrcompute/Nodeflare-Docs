@@ -13,7 +13,7 @@ Quick steps to install **Hypercompute Go** on your Android device:
 Download the latest `.apk` file from the  
 [Hypercompute Releases](https://github.com/hypercompute/releases).
 
-### Allow Installation
+### Allow Installation Of Hyperrcompute
 
 If it's your first time installing apps this way:
 

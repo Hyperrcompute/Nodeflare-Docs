@@ -65,13 +65,20 @@ nvm use 18
 npm i hyperrcompute@0.0.12 -g
 ```
 
-### Step 8: Start Hyperrcompute in Live Mode
+### Step 8: Get Command From Website
+
+Go to command section and fill the configuration in form. You will get a command from it run that on your terminal
+
+![Install from Website](/img/form.png)
+
+
+### Step 9: Start Hyperrcompute in Live Mode
 
 ```bash
-hyperrcompute --image <DOCKER_IMAGE> --hours <HOURS> --minutes <MINUTES> --force --live --connector <PRIVATE_CONNECTION_STRING>
+hyperrcompute --image <DOCKER_IMAGE> --hours <HOURS> --minutes <MINUTES> --force --live --connector <PRIVATE_CONNECTION_STRING> --userId <USER_ID>
 ```
 
-### Step 9: Access Docker Management Server
+### Step 10: Access Docker Management Server
 
 Open browser to: `http://localhost:3000/containers` or use Postman for API testing
 

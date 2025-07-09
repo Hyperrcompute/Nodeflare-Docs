@@ -66,7 +66,7 @@ hyperrcompute [options]
 ### Start a New Live GPU Server Instance
 
 ```bash
-hyperrcompute --new --image ubuntu --hours 1 --minutes 0 --force --live --connector 89fd199803cd2aaf4b5cdba373a970a9e6a08f86547f26c24aae3efee062
+hyperrcompute --new --image ubuntu --hours 1 --minutes 0 --force --live --connector 89fd199803cd2aaf4b5cdba373a970a9e6a08f86547f26c24aae3efee062 --userId 68562024094012b6f3d5ed13
 ```
 
 Creates a container with 'ubuntu' image, runs for 1 hour using a connector key.

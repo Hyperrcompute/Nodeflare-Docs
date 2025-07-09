@@ -26,6 +26,70 @@ html[data-theme='dark'] {
   --ifm-code-background: #1e1e1e;
   --ifm-link-color: #82aaff;
 }
+ html[data-theme='dark'] .navbar__search-input .searchInput_YFbd  {
+  color: white !important;
+}
+.pagination-nav__label {
+  color: #4470ebee;
+}
+/* === Code Block Styling (Consistent Dark for All Themes) === */
+.codeBlockLines_e6Vv {
+  background-color: #2b2b2b !important;
+  color: #f5f5f5 !important;
+  padding: 1rem 1.25rem !important;
+  border-radius: 10px !important;
+  overflow-x: auto !important;
+  font-family: 'Fira Code', 'Consolas', 'Courier New', monospace !important;
+  font-size: 0.88rem !important;
+  line-height: 1.6 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset !important;
+  border: 1px solid #444 !important;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+/* === Syntax Highlighting (Prism or Manual) === */
+.codeBlockLines_e6Vv .token.comment,
+.codeBlockLines_e6Vv .token.prolog,
+.codeBlockLines_e6Vv .token.doctype,
+.codeBlockLines_e6Vv .token.cdata {
+  color: #888 !important;
+  font-style: italic;
+}
+.codeBlockLines_e6Vv .token.keyword {
+  color: #c792ea !important;
+}
+.codeBlockLines_e6Vv .token.string {
+  color: #ecc48d !important;
+}
+.codeBlockLines_e6Vv .token.function {
+  color: #82aaff !important;
+}
+.codeBlockLines_e6Vv .token.operator {
+  color: #89ddff !important;
+}
+.codeBlockLines_e6Vv .token.variable {
+  color: #f78c6c !important;
+}
+
+/* === Button Icons (Copy/Wrap) === */
+.wordWrapButtonIcon_b1P5,
+.copyButtonIcon_xYZ {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  transition: 0.2s ease;
+}
+.wordWrapButtonIcon_b1P5:hover,
+.copyButtonIcon_xYZ:hover {
+  color: #82aaff !important;
+  fill: #82aaff !important;
+}
+
+/* === Optional: Dark mode consistency (not strictly needed here) === */
+html[data-theme='dark'] .codeBlockLines_e6Vv {
+  background-color: #1e1e1e !important;
+  border-color: #333 !important;
+}
 
 /* === Body === */
 body {
@@ -36,23 +100,44 @@ body {
 }
 
 /* === Headings === */
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: var(--ifm-heading-color);
   font-weight: 700;
   margin-top: 1.2em;
   margin-bottom: 0.6em;
 }
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.6rem; }
-h4 { font-size: 1.25rem; }
-h5 { font-size: 1rem; }
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
 
 /* === Navbar === */
 .navbar {
   background-color: var(--ifm-navbar-background-color) !important;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  
 }
+
 .navbar__link {
   color: var(--ifm-navbar-link-color) !important;
 }
@@ -61,9 +146,11 @@ h5 { font-size: 1rem; }
 .theme-doc-sidebar {
   background-color: #fafafa;
 }
+
 html[data-theme='dark'] .theme-doc-sidebar {
   background-color: #1a1a1a;
 }
+
 .theme-doc-sidebar .menu__list {
   padding-top: 1rem;
 }
@@ -77,10 +164,12 @@ html[data-theme='dark'] .theme-doc-sidebar {
   color: #333333;
   transition: all 0.2s ease;
 }
+
 .theme-doc-sidebar .menu__link:hover {
   background-color: rgba(79, 85, 105, 0.1);
   color: var(--ifm-link-color);
 }
+
 .theme-doc-sidebar .menu__link--active,
 .theme-doc-sidebar .menu__link--active:hover,
 .theme-doc-sidebar .menu__link[aria-current='page'],
@@ -95,6 +184,7 @@ html[data-theme='dark'] .theme-doc-sidebar {
 html[data-theme='dark'] .theme-doc-sidebar .menu__link {
   color: #cccccc !important;
 }
+
 /* Target table of contents active states in dark mode */
 html[data-theme='dark'] .table-of-contents__link--active,
 html[data-theme='dark'] .table-of-contents__link.table-of-contents__link--active,
@@ -105,6 +195,7 @@ html[data-theme='dark'] .toc-highlight.table-of-contents__link--active {
   border-radius: 6px;
   padding: 4px 8px;
 }
+
 html[data-theme='light'] .toc-highlight.table-of-contents__link--active {
   color: #363434d7 !important;
   background-color: #b5b8be34 !important;
@@ -112,13 +203,15 @@ html[data-theme='light'] .toc-highlight.table-of-contents__link--active {
   border-radius: 6px;
   padding: 4px 8px;
 }
+
 html[data-theme='dark'] .theme-doc-sidebar .menu__link:hover {
   background-color: rgba(102, 106, 114, 0.15) !important;
   color: #c5cad6 !important;
 }
+
 /* Target both toc-highlight and active states */
 html[data-theme='dark'] .toc-highlight.table-of-contents__link--active:hover {
- color: #ffffffd7 !important;
+  color: #ffffffd7 !important;
   background-color: #b5b8be34 !important;
 }
 
@@ -130,6 +223,7 @@ html[data-theme='dark'] .table-of-contents__link.toc-highlight {
 html[data-theme='dark'] .table-of-contents__link.toc-highlight:hover {
   color: var(--ifm-link-hover-color);
 }
+
 /* Target all possible active states in dark mode */
 html[data-theme='dark'] .theme-doc-sidebar .menu__link--active,
 html[data-theme='dark'] .theme-doc-sidebar .menu__link--active:hover,
@@ -182,12 +276,14 @@ html[data-theme='dark'] [class*="theme-doc-sidebar"] [class*="menu__link"][aria-
 .breadcrumbs__item span {
   color: var(--ifm-font-color-base);
 }
+
 html[data-theme='dark'] .breadcrumbs__item a,
 html[data-theme='dark'] .breadcrumbs__item span {
   color: #cccccc !important;
 }
+
 .breadcrumbs__item--active span {
-  font-weight: bold; 
+  font-weight: bold;
   color: #cccccc;
 }
 
@@ -203,6 +299,7 @@ code {
   border-radius: 3px;
   font-family: Consolas, 'Courier New', monospace;
 }
+
 pre {
   background-color: var(--ifm-code-background);
   padding: 1rem;
@@ -210,6 +307,7 @@ pre {
   box-shadow: inset 0 0 0 1px #e0e0e0;
   font-size: 0.9rem;
 }
+
 html[data-theme='dark'] pre {
   box-shadow: inset 0 0 0 1px #444444;
 }
@@ -220,6 +318,7 @@ html[data-theme='dark'] pre {
   background-color: #f0fcfc;
   padding: 0.8em;
 }
+
 html[data-theme='dark'] .admonition {
   background-color: #1a1a1a;
   border-left-color: var(--ifm-link-color);

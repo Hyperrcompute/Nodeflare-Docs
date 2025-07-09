@@ -1,18 +1,18 @@
 ---
 id: terminology-connection-string
-title: Hypercompute Terminology
+title: Hyperrcompute Terminology
 sidebar_label: Terminologies
 sidebar_position: 5
 ---
 
-# Hypercompute Terminology
+# Hyperrcompute Terminology
 
-Understanding key terms will help you navigate the decentralized compute marketplace effectively. Here's your complete guide to Hypercompute terminology.
+Understanding key terms will help you navigate the decentralized compute marketplace effectively. Here's your complete guide to Hyperrcompute terminology.
 
 ## Core Concepts
 
 ### Connection String
-A **connection string** is a secure, unique identifier that enables peer-to-peer connections between devices in the Hypercompute network. It acts like a private SSH key.
+A **connection string** is a secure, unique identifier that enables peer-to-peer connections between devices in the Hyperrcompute network. It acts like a private SSH key.
 
 **Example:** `89fd199803cd2aaf4b5cdba373a970a9e6a08f86547f26c24aae3efee062`
 
@@ -20,10 +20,10 @@ A **connection string** is a secure, unique identifier that enables peer-to-peer
 - Treat it like a password - never share publicly
 - Required for both providers and consumers
 - Enables direct device-to-device communication
-- Generated automatically by Hypercompute
+- Generated automatically by Hyperrcompute
 
 ### Provider Node
-A **provider node** is a device that shares its computing resources (CPU, GPU, memory) with the Hypercompute network to earn cryptocurrency.
+A **provider node** is a device that shares its computing resources (CPU, GPU, memory) with the Hyperrcompute network to earn cryptocurrency.
 
 **Provider Benefits:**
 - Earn HCC tokens for shared resources
@@ -52,7 +52,7 @@ An **ephemeral container** is a temporary Docker container that automatically de
 - Secure and sandboxed
 
 ### hyperdht
-**hyperdht** is the underlying peer-to-peer networking protocol that enables decentralized communication between Hypercompute nodes without central servers.
+**hyperdht** is the underlying peer-to-peer networking protocol that enables decentralized communication between Hyperrcompute nodes without central servers.
 
 **Features:**
 - Distributed hash table for node discovery
@@ -81,7 +81,7 @@ A **TCP tunnel** creates a secure communication channel between your local machi
 ## Marketplace Terms
 
 ### HCC Token
-**HCC** (Hypercompute Coin) is the native cryptocurrency used for payments within the Hypercompute ecosystem.
+**HCC** (Hyperrcompute Coin) is the native cryptocurrency used for payments within the Hyperrcompute ecosystem.
 
 **Usage:**
 - Providers earn HCC for sharing resources
@@ -168,7 +168,7 @@ The **force flag** (`--force`) allows starting a new container even if another c
 - API endpoint authentication
 
 ### Private Network
-A **private network** in Hypercompute refers to the encrypted, peer-to-peer connections between nodes that bypass traditional internet infrastructure.
+A **private network** in Hyperrcompute refers to the encrypted, peer-to-peer connections between nodes that bypass traditional internet infrastructure.
 
 **Benefits:**
 - Enhanced privacy and security
@@ -237,6 +237,6 @@ A **private network** in Hypercompute refers to the encrypted, peer-to-peer conn
 
 ---
 
-**💡 Quick Reference:** Bookmark this page for easy access to terminology while using Hypercompute!
+**💡 Quick Reference:** Bookmark this page for easy access to terminology while using Hyperrcompute!
 
 <!-- **🔗 See Also:** Check out our [FAQ](./faq) for common questions or [Troubleshooting Guide](./troubleshooting) for technical issues. -->

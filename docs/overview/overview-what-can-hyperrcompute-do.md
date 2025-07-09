@@ -1,14 +1,14 @@
 ---
 id: overview-what-can-hyperrcompute-do
-title: What can Hypercompute do
-sidebar_label: What Hypercompute can do
+title: What can Hyperrcompute do
+sidebar_label: What Hyperrcompute can do
 
 ---
-# ⚡ What Can Hypercompute Do?
+# ⚡ What Can Hyperrcompute Do?
 
-> Hypercompute is a decentralized GPU marketplace — connect to powerful GPUs around the world, or share your own and earn. No setup. No middlemen.
+> Hyperrcompute is a decentralized GPU marketplace — connect to powerful GPUs around the world, or share your own and earn. No setup. No middlemen.
 
-Here’s what you can do with Hypercompute:
+Here’s what you can do with Hyperrcompute:
 
 1. 🧠 **Run AI/ML workloads on remote GPUs**  
    Instantly connect to decentralized GPUs for model training, fine-tuning, or inference — all without cloud accounts or DevOps.
@@ -19,8 +19,8 @@ Here’s what you can do with Hypercompute:
 3. 🔄 **Share Compute Between Friends, Teams, or Orgs**  
    Securely tunnel workloads to trusted GPUs without dealing with SSH keys, IPs, or VPNs.
 
-4. 🎮 **Offload Game Rendering or Simulation Tasks**  
-   Tap into remote GPUs for rendering, game server hosting, or physics simulations — peer-to-peer.
+4. 🎮 **Offload Game or Simulation Tasks**  
+   Tap into remote GPUs for game server hosting, or physics simulations — peer-to-peer.
 
 5. 🔐 **Maintain Full Privacy and Control**  
    All connections are encrypted and authenticated. You choose who uses your GPU, for how long, and what workloads are allowed.
@@ -29,11 +29,11 @@ Here’s what you can do with Hypercompute:
 
 ## 🎥 Video Overview
 
-Watch how Hypercompute works in just 60 seconds:
+Watch how Hyperrcompute works in just 60 seconds:
 
 <div align="center">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"  
-    title="How Hypercompute Works" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    title="How Hyperrcompute Works" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
   </iframe>
 </div>
 ---

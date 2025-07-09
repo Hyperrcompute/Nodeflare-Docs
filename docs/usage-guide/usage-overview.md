@@ -5,16 +5,16 @@ sidebar_label: Usage Overview
 sidebar_position: 4
 ---
 
-# Using Hypercompute
+# Using Hyperrcompute
 
-Hypercompute is a peer-to-peer remote compute execution platform that enables you to deploy lightweight, ephemeral Docker containers over a decentralized network. Whether you're providing compute resources or consuming them, Hypercompute makes distributed computing accessible and secure.
+Hyperrcompute is a peer-to-peer remote compute execution platform that enables you to deploy lightweight, ephemeral Docker containers over a decentralized network. Whether you're providing compute resources or consuming them, Hyperrcompute makes distributed computing accessible and secure.
 
 ## 🚀 Key Capabilities
 
-**For Compute Providers (Earn Crypto):**
+**For Compute Providers (Earn):**
 - Share your device's computing power with the network
 - Run secure, isolated Docker containers for clients
-- Earn cryptocurrency for providing resources
+- Earn for providing resources
 - Set custom pricing and availability schedules
 
 **For Compute Consumers (Access Power):**
@@ -31,195 +31,66 @@ Hypercompute is a peer-to-peer remote compute execution platform that enables yo
 - 💥 Force container deployment (`--force`)
 - 🧪 Live mode with real-time data streaming (`--live`)
 
-## Getting Started
+# Getting Started
 
-### 1. Start as a Compute Provider
+## Installation
 
-Begin earning by sharing your compute resources:
+Install globally using npm:
+```bash
+npm i -g hyperrcompute@0.0.12
+```
+
+Ensure Docker is installed and running, and Node.js v18+ is in use.
+
+## Basic Command Format
 
 ```bash
-hypercompute <PRIVATE_CONNECTION_STRING> --port <PORT>
+hyperrcompute [options]
 ```
 
-**Example:**
-```bash
-hypercompute 89fd199803cd2aaf4b5cdba373a970a9e6a08f86547f26c24aae3efee062 --port 3000
-```
+## Available Options
 
-You'll see confirmation that your provider node is active:
+- `--version` – Display the current version of Hyperrcompute
+- `--help` – Show help instructions
+- `--new` – Generate a new SERVER_KEY and save it to .env
+- `--hours <number>` – Set duration in hours (default: 0)
+- `--minutes <number>` – Set duration in minutes (default: 0)
+- `--image <image_name>` – Docker image to run (required)
+- `--live` – Run in live mode (required for starting server)
+- `--connect <KEY_FROM_WEBSITE>` – Connect to an existing Hyperrcompute server
+- `--force` – Force start even if warnings are present
+- `--port <port_number>` – Set the port for connecting (default: 3000)
 
-```
-[INFO] Server started
-┌──────────────────────────────────────────────────────────────────────────────┐
-│                        Hypercompute Provider Node Started ⛵️                  │
-│                  Connection Mode: Private Connection String                  │
-│                 Access dashboard on http://127.0.0.1:3000/                  │
-│                              Connection string:                              │
-│         89fd199803cd2aaf4b5cdba373a970a9e6a08f86547f26c24aae3efee062         │
-│   NOTE: TREAT PRIVATE CONNECTION STRINGS LIKE SSH KEYS - KEEP THEM SECURE   │
-└──────────────────────────────────────────────────────────────────────────────┘
-```
+## Usage Examples
 
-### 2. Request Compute Resources
-
-Deploy containers on the distributed network:
+### Start a New Live GPU Server Instance
 
 ```bash
-hypercompute --image <DOCKER_IMAGE> --time <SECONDS> --force --live --connector <PROVIDER_CONNECTION_STRING>
+hyperrcompute --new --image ubuntu --hours 1 --minutes 0 --force --live --connector 89fd199803cd2aaf4b5cdba373a970a9e6a08f86547f26c24aae3efee062
 ```
 
-**Example - Ubuntu Container:**
+Creates a container with 'ubuntu' image, runs for 1 hour using a connector key.
+
+### Connect to an Existing GPU Server
+
 ```bash
-hypercompute --image ubuntu --time 600 --force --live --connector 89fd199803cd2aaf4b5cdba373a970a9e6a08f86547f26c24aae3efee062
+hyperrcompute --connect "89fd199803cd2aaf4b5cdba373a970a9e6a08f86547fee062-SPLIT-12cd30614bffe9e86eefeb7753e3f5245b06bc4bd906b63af" --port 30001
 ```
 
-**Example - GPU-Enabled Container:**
+It will return a url like `http://hyperrcompute.com/hyperrcompute/terminal?key=12cd30614bffe9e86eefeb7`
+
+Open it in browser to access terminal, you are connected to an existing server on port 30001.
+
+### Display Help
+
 ```bash
-hypercompute --image tensorflow/tensorflow:latest-gpu --time 3600 --gpu --connector <CONNECTION_STRING>
+hyperrcompute --help
 ```
 
-## Core Operations
+## Environment File (.env)
 
-### Provider Management
+The `--new` flag generates a SERVER_KEY and stores it in a `.env` file.
 
-**Start Provider Service:**
-```bash
-hypercompute provider --start --port 3000
-```
+## Reference
 
-**Check Provider Status:**
-```bash
-hypercompute provider --status
-```
-
-**Set Resource Limits:**
-```bash
-hypercompute provider --max-containers 5 --max-memory 8GB --max-gpu-memory 12GB
-```
-
-**Configure Pricing:**
-```bash
-hypercompute provider --price-cpu 0.01 --price-gpu 0.10 --currency HCC
-```
-
-### Consumer Operations
-
-**Browse Available Providers:**
-```bash
-hypercompute marketplace --list --filter gpu
-```
-
-**Deploy Specific Workloads:**
-```bash
-# AI/ML Training
-hypercompute --image pytorch/pytorch --gpu --time 7200 --connector <PROVIDER_KEY>
-
-# Web Development
-hypercompute --image node:18 --port 3000 --time 1800 --connector <PROVIDER_KEY>
-
-# Data Processing
-hypercompute --image python:3.9 --memory 4GB --time 3600 --connector <PROVIDER_KEY>
-```
-
-**Monitor Running Containers:**
-```bash
-hypercompute jobs --list
-hypercompute jobs --logs <JOB_ID>
-hypercompute jobs --stop <JOB_ID>
-```
-
-### Connection Management
-
-**Generate Connection String:**
-```bash
-hypercompute keys --generate
-```
-
-**Share Connection (QR Code):**
-```bash
-hypercompute keys --qr <CONNECTION_STRING>
-```
-
-**Manage Multiple Connections:**
-```bash
-hypercompute connections --add <CONNECTION_STRING> --alias "gpu-provider-1"
-hypercompute connections --list
-hypercompute connections --connect gpu-provider-1
-```
-
-### File Management
-
-**Upload Files to Container:**
-```bash
-hypercompute files --upload ./dataset.zip --job <JOB_ID> --path /workspace/
-```
-
-**Download Results:**
-```bash
-hypercompute files --download /workspace/results/ --job <JOB_ID> --local ./results/
-```
-
-**Real-time File Sync:**
-```bash
-hypercompute sync --local ./src/ --remote /workspace/src/ --job <JOB_ID>
-```
-
-## Security & Configuration
-
-### Environment Configuration
-
-The `.env` file automatically stores:
-- `SERVER_KEY` - Authentication between peer nodes
-- `WALLET_ADDRESS` - Your cryptocurrency wallet
-- `PROVIDER_SETTINGS` - Resource limits and pricing
-
-### Security Best Practices
-
-🔐 **Connection Strings:**
-- Treat private connection strings like SSH keys
-- Never share them publicly or in repositories
-- Rotate keys regularly in production
-- Use separate keys for different environments
-
-🛡️ **Container Security:**
-- All containers run in isolated environments
-- Network access is controlled and monitored
-- Resource usage is strictly limited
-- Containers are automatically destroyed after timeout
-
-## Advanced Usage
-
-### Background Operations
-```bash
-# Run provider in background
-hypercompute provider --daemon --start
-
-# Schedule compute jobs
-hypercompute scheduler --add "0 2 * * *" --image data-processor --time 3600
-```
-
-### Live Monitoring
-```bash
-# Real-time provider stats
-hypercompute monitor --provider --live
-
-# Container performance
-hypercompute monitor --job <JOB_ID> --metrics cpu,memory,gpu
-```
-
-### API Integration
-```bash
-# Get provider API endpoint
-hypercompute api --endpoint --provider <CONNECTION_STRING>
-
-# Container management via REST
-curl -X POST http://127.0.0.1:3000/api/containers \
-  -H "Authorization: Bearer <JWT_TOKEN>" \
-  -d '{"image": "ubuntu", "time": 600}'
-```
-
----
-
-**💡 Pro Tip:** Use `hypercompute --help` to see all available commands and options for your specific use case.
-
-<!-- **🔗 Next Steps:** Check out our [Provider Guide](./provider-setup) or [Consumer Walkthrough](./consumer-guide) for detailed tutorials! -->
+NPM Package: https://www.npmjs.com/package/hyperrcompute

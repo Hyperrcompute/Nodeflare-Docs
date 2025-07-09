@@ -22,21 +22,16 @@ const sidebars = {
       type: 'category',
       label: '🚀 Install',
       items: [
-        'install/Install-npm',
-        'install/Install-executablefile',
-        'install/install-mac',
-        // 'install/install-android',
+        'install/Hyperrcompute on Windows',
+        'install/Hyperrcompute on Linux',
+        'install/Hyperrcompute on Mac',
       ],
     },
     {
        type: 'category',
       label: '📘 Usage Guide',
       items: [
-        'usage-guide/usage-overview',
-        'usage-guide/usage-set-port',
-        'usage-guide/usage-connect',
-        // 'usage-guide/usage-background',
-        // 'usage-guide/usage-filemanager',
+        'usage-guide/usage-overview'
       ],
     },
     {
@@ -44,7 +39,6 @@ const sidebars = {
       label: '🧠 Terminology',
       items: [
           'terminology/terminology-connection-string'
-          // 'terminology/terminology-public-vs-private'
         ,
       ],
     },

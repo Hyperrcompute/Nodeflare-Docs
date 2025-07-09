@@ -5,7 +5,7 @@ sidebar_label: Our Features
 ---
 # 🚀 Our Features
 
-Discover how **Hypercompute** empowers you with secure, peer-to-peer access to GPU compute—whether you're consuming or supplying—on a global, decentralized marketplace.
+Discover how **Hyperrcompute** empowers you with secure, peer-to-peer access to GPU compute—whether you're consuming or supplying—on a global, decentralized marketplace.
 
 ---
 
@@ -23,7 +23,7 @@ Share workload access instantly—scan a QR code or paste a secure key to connec
 
 ### 💻 Cross‑Platform & Framework Ready
 
-Works seamlessly on **Linux**, **macOS**, and **Windows**. Supports **Docker**, **CUDA**, **PyTorch**, **TensorFlow**, and containerized workflows—ideal for AI, rendering, or general compute.
+Works seamlessly on **Linux**, **macOS**, and **Windows**. Supports **Docker**, **CUDA**, **PyTorch**, **TensorFlow**, and containerized workflows—ideal for AI or general compute.
 
 ---
 
@@ -47,19 +47,19 @@ Bypasses centralized infrastructure entirely. Tasks run directly on supplier GPU
 
 ### 💸 Earn from Idle GPUs
 
-Turn unused GPU cycles into income. Suppliers set their pricing; the marketplace matches them with demand—this aligns with decentralized models like Theta EdgeCloud’s supply–demand dynamics :contentReference[oaicite:1]{index=1}.
+Turn unused GPU cycles into income. Suppliers set their pricing; the marketplace matches them with demand—this aligns with decentralized models like Theta EdgeCloud’s supply–demand dynamics.
 
 ---
 
 ### 🌍 Open‑Source & Transparent
 
-Fully open-source and community-driven. Customize your node, audit the code, and join an ecosystem designed for democratized compute—similar to how Hyperbolic enables transparent, decentralized GPU access :contentReference[oaicite:2]{index=2}.
+Fully open-source and community-driven. Customize your node, audit the code, and join an ecosystem designed for democratized compute—similar to how Hyperbolic enables transparent, decentralized GPU access.
 
 ---
 
 ### 🧠 Intelligent Marketplace
 
-Smart pricing, dynamic availability, and load balancing help reduce costs by up to 2.5× compared to centralized clouds—echoing Nosana’s cost-efficiency goals :contentReference[oaicite:3]{index=3}.
+Smart pricing, dynamic availability, and load balancing help reduce costs by up to 2.5× compared to centralized clouds—echoing Nosana’s cost-efficiency goals.
 
 ---
 
@@ -71,9 +71,3 @@ Smart pricing, dynamic availability, and load balancing help reduce costs by up 
 - **Resilient & Reliable**: Works even if some nodes go offline
 
 ---
-
-Ready to try it?  
-Visit [hyperrcompute.com](http://hyperrcompute.com) or explore our repo at [github.com/hypercompute/hypercompute](https://github.com/hypercompute/hypercompute)
-
-Want help creating icons, UI mock-ups, or a feature-comparison table with centralized clouds? Just ask!
-::contentReference[oaicite:4]{index=4}

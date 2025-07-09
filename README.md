@@ -1,6 +1,6 @@
-# HyperCompute Documentation
+# Hyperrcompute Documentation
 
-**Comprehensive documentation for HyperCompute - the decentralized GPU marketplace.**
+**Comprehensive documentation for Hyperrcompute - the decentralized GPU marketplace.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Docusaurus](https://img.shields.io/badge/Docusaurus-2.0-green.svg)](https://docusaurus.io/)
@@ -9,7 +9,7 @@
 
 ## 📚 About This Documentation
 
-This documentation website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator designed for building beautiful documentation sites with ease. It provides comprehensive guides, API references, and tutorials for HyperCompute - the revolutionary decentralized GPU marketplace.
+This documentation website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator designed for building beautiful documentation sites with ease. It provides comprehensive guides, API references, and tutorials for Hyperrcompute - the revolutionary decentralized GPU marketplace.
 
 ## 🚀 Features
 
@@ -19,13 +19,13 @@ This documentation website is built using [Docusaurus](https://docusaurus.io/), 
 - **🎨 Clean UI/UX** - Beautiful, accessible interface for developers and GPU providers
 - **⚡ Fast Loading** - Optimized static generation for speed
 - **📖 Comprehensive Guides** - Step-by-step tutorials for GPU marketplace participation
-- **🔧 API Documentation** - Complete reference for all HyperCompute APIs
+- **🔧 API Documentation** - Complete reference for all Hyperrcompute APIs
 - **🌙 Dark Mode Support** - Toggle between light and dark themes
 - **💰 Marketplace Guides** - Documentation for buyers and sellers in the GPU ecosystem
 
 ## 🛠️ What You'll Find Here
 
-This documentation covers everything you need to know about HyperCompute:
+This documentation covers everything you need to know about Hyperrcompute:
 
 ### For GPU Providers
 - **Setup Guides** - How to list your GPUs on the marketplace
@@ -36,8 +36,8 @@ This documentation covers everything you need to know about HyperCompute:
 ### For GPU Consumers  
 - **Getting Started** - Rent GPU power for your compute needs
 - **Cost Optimization** - Find the best deals for your workloads
-- **Integration Guides** - Connect HyperCompute to your applications
-- **Use Case Examples** - AI training, rendering, mining, and more
+- **Integration Guides** - Connect Hyperrcompute to your applications
+- **Use Case Examples** - AI training, mining, and more
 
 ### For Developers
 - **API Reference** - Complete SDK and REST API documentation
@@ -111,7 +111,7 @@ docs/
 
 ### Navigation Overview
 
-- **🏠 Welcome** - Your starting point with HyperCompute introduction
+- **🏠 Welcome** - Your starting point with Hyperrcompute introduction
 - **✨ Overview** - Core concepts of the decentralized GPU marketplace
 - **🚀 Install** - Complete installation and configuration guides
 - **📘 Usage Guide** - Practical tutorials for providers and consumers
@@ -128,9 +128,9 @@ We welcome contributions to improve our documentation! Here's how you can help:
 4. Submit a pull request
 
 ### Reporting Issues
-- 🐛 [Report Documentation Issues](https://github.com/hypercompute/nodeflare-docs/issues)
-- 💡 [Suggest Content Improvements](https://github.com/hypercompute/nodeflare-docs/issues)
-- 📝 [Request New Documentation](https://github.com/hypercompute/nodeflare-docs/issues)
+- 🐛 [Report Documentation Issues](https://github.com/Hyperrcompute/nodeflare-docs/issues)
+- 💡 [Suggest Content Improvements](https://github.com/Hyperrcompute/nodeflare-docs/issues)
+- 📝 [Request New Documentation](https://github.com/Hyperrcompute/nodeflare-docs/issues)
 
 ### Writing Guidelines
 - Use clear, concise language
@@ -140,14 +140,14 @@ We welcome contributions to improve our documentation! Here's how you can help:
 
 ## 🔗 Useful Links
 
-- **[HyperCompute Platform](http://hyperrcompute.com)** - Main marketplace platform
+- **[Hyperrcompute Platform](http://hyperrcompute.com)** - Main marketplace platform
 - **[API Documentation](https://docs.hyperrcompute.com)** - REST API reference
 - **[Community Discord](https://discord.gg/hyperrcompute)** - Join our community
 - **[GitHub Organization](https://github.com/hyperrcompute)** - All repositories
 
 ## 📞 Support
 
-Need help with HyperCompute or this documentation?
+Need help with Hyperrcompute or this documentation?
 
 - 📚 [Browse Documentation](https://docs.hyperrcompute.com)
 - 💬 [Community Discord](https://discord.gg/hyperrcompute)

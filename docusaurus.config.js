@@ -2,7 +2,7 @@
 
 const config = {
   title: 'Hyperrcompute',
-  tagline: 'Your simple P2P tunnel and file sharing tool',
+  tagline: 'Your simple P2P tunnel and gpu sharing tool',
   url: 'http://localhost',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -55,6 +55,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark', 
+        disableSwitch: false, 
+        respectPrefersColorScheme: false, 
+      },
       docs: {
         sidebar: {
           // hideable: true,
